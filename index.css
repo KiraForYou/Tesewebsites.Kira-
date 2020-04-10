@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+b.s{
+    width: 10%;
+    font-size: 20px;
+    padding: 15px;
+    font-family: sans-serif;
+    position: relative;
+    top: 30px;
+    left: 275px;
+}
+
+b.f {
+    background-color: #fcff18;
+    width: 10%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    position: relative;
+    top: 30px;
+    left: 260px;
+}
+
+.block {
+    width: 300px;
+    height: 80px;
+    background-color: #fcff18;
+    font-size: 16px;
+    float: right;
+
+}
+
+.logo {
+    width: 138px;
+    height: 64px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.img {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.adress {
+    font-family: sans-serif;
+    margin-right: 80px;
+    margin-top: 18px;
+    font-size: 16px;
+    float: right;
+}
+
+.blockimg {
+    position: relative;
+    text-align: center;
+}
+
+.bk {
+    height: 600px;
+    width: 100%;
+}
+
+.first {
+    position: absolute;
+    font-size: 80px;
+    color: white; 
+    top: 250px;
+    left: 170px;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.me {
+    color: #fcff18;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.buton {
+    position: absolute;
+    top: 500px;
+    left: 530px;
+    font-style: bold;
+}
+
+.klik {
+    width: 228px;
+    height: 63px;
+    background-color: #fcff18;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+}
+
+.description {
+    position: relative;
+    text-align: center;
+}
+
+.statement {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    font-size: 43px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.le {
+    background-color: #fcff18;
+}
+
+.advantagesone {
+    float: left;
+     font-size: 16px;
+     margin-top: 220px;
+     margin-left: 70px;
+     width: 25%;
+     text-align: center; 
+}
+
+h1.tx {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p.tex {
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+.icn {
+    width: 88px;
+    height: 88px;
+}
+
+
+.man {
+    background-image: url('../img/add-bg.jpg');
+    position: relative;
+    text-align: left;
+    margin-top: 550px;
+}
+
+.dis {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.unt {
+    color: #fcff18;
+}
