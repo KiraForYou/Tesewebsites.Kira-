@@ -8,5 +8,5 @@ function bmi () {
 
     result = num1 / (num2 * num2);
 
-    document.getElementById('five_result').innerHTML = result.toFixed(1);
+    document.getElementById('content5_result').innerHTML = result.toFixed(1);
 }
