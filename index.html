@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lend</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico.png" type="image/x-icon">
     <script src="./index.js" defer></script>
 </head>
 <body>
@@ -42,7 +44,7 @@
         <div class="content1_div">
             <div class="content1_text">
                 <img src="./img/iron.png" class="content1_img" />
-                <h1 style="height: 24px;  margin-top: 20px;">Intense workouts</h1>
+                <h1 class="content1_h1">Intense workouts</h1>
                 <p class="content1_div_p">Be machine, be wild<br />
                 Train harder, press deeper<br />
                 Go to your porpouse<br />
@@ -50,7 +52,7 @@
             </div>
             <div class="content1_text">
                 <img src="./img/clock.png" class="content1_img" />
-                <h1 style="height: 24px;  margin-top: 20px;">Intense workouts</h1>
+                <h1 class="content1_h1">Intense workouts</h1>
                 <p class="content1_div_p">Be machine, be wild<br />
                     Train harder, press deeper<br />
                     Go to your porpouse<br />
@@ -58,7 +60,7 @@
             </div>
             <div class="content1_text">
                 <img src="./img/place.png" class="content1_img" />
-                <h1 style="height: 24px; margin-top: 20px;">Intense workouts</h1>
+                <h1 class="content1_h1">Intense workouts</h1>
                 <p class="content1_div_p">Be machine, be wild<br />
                     Train harder, press deeper<br />
                     Go to your porpouse<br />
@@ -71,7 +73,7 @@
     <div class="content2">
         <div class="content2_div">
             <p class="content2_p">Pay now and get<br />
-                a 25% <span style="color: #fcff18;">Discount</span>
+                a 25% <span class="content2_span">Discount</span>
             </p>
 
             <div class="content2_text">
@@ -86,7 +88,7 @@
                 <img class="content2_img" src="./img/check-icon.png" style="width: 32px; height: 32px;" />
                 <p calss="content2_text_p">Here may be list of advantages of our gym</p>
             </div>
-            <button class="content2_bottom"><a href="" style="text-decoration: none; color: black">Join the Gym</a></button>
+            <button class="content2_button"><a href="" style="text-decoration: none; color: black">Join the Gym</a></button>
         </div>
     </div>
 
@@ -144,56 +146,66 @@
                 <p class="content5_p">Here you can calculate your perfect amount of calories<br />
                 in dependence of your purposes</p>
                 <form class="content5_form">
-                    <input type="number" placeholder="Weight (kg)" id="firstnum" />
-                    <input type="number" placeholder="Height (m 0.00)" id="secondnum" />
-                    <div style="display: flex;">
-                        <button id="content5_button" type="submit" onclick="bmi()">Calculate</button>
-                        <p id="content5_result">BMI=</p>
+                    <div class="content5_num">
+                        <input type="number" placeholder="Weight (kg)" id="firstnum" class="num" />
+                        <input type="number" placeholder="Height (m 0.00)" id="secondnum" class="num" />
                     </div>
-                    <i class="content5_i">Now you know your BMI, after this step you have to go in your browser<br />
-                        and find your number in the special spreadsheet</i>
+                    <div class="content5_calculate">
+                        <button id="content5_button" class="content5_button" type="submit" onclick="bmi()">Calculate</button>
+                        <p id="content5_result" class="content5_result">BMI=</p>
+                    </div>
+                    <div class="content5_p1">
+                    <p>Now you know your BMI, after this step you have to go in your browser
+                        and find your number in the special spreadsheet</p>
+                    </div>
                 </form>
         </div>
     </div>
 
     <div class="content6">
         <p class="content6_p">Subscribe to <span style="background-color: #fcff18; color: black;">newsletter</span></p>
-        <input type="email" placeholder="Your e-mail here" id="content6_email"/>
+        <input type="email" placeholder="Your e-mail here" id="content6_email" class="content6_email" />
         <button class="content6_button"><a href="#" style="text-decoration: none; color: black;">Subscribe</a></button>
     </div>
 
     <div class="map">
         <p class="map_p">We are on the <span style="background-color: #fcff18;">map</span></p>
         <div class="map_size">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A656577821429adcaa3a1f1e1823c66469345022813b8471165c5c9e6c55a16be&amp;width=688&amp;height=467&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A656577821429adcaa3a1f1e1823c66469345022813b8471165c5c9e6c55a16be&amp;width=880&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </div>
 
     <div class="footer">
-        <div class="footer_sections">
-        <h1 class="footer_h1">Location</h1>
-        <h1 class="footer_h1">Subscriptions</h1>
-        <h1 class="footer_h1">E-mail</h1>
-        <h1 class="footer_h1">Social Media</h1>
-        </div>
-        <div class="footer_div"> 
-            <div class="footer_div_img">
-                <img src="./img/one.png" style="width: 18px; height: 20px;" />
-                <p class="footer_divone_p">1525 Awesome Lane,<br />
-                Los Angeles, CA</p>
+        <div class="footer_information">
+            <div class="footer_section">
+                    <h1 class="footer_h1">Location</h1>
+                    <div class="footer_div_img">
+                        <img src="./img/one.png" style="width: 18px; height: 20px;" />
+                        <p class="footer_divone_p">1525 Awesome Lane,<br />
+                        Los Angeles, CA</p>
+                    </div>
             </div>
-            <div class="footer_div_img">
-                <img src="./img/2.png" style="width: 20px; height: 20px;" />
-                <p class="footer_divone_p">+7 (926)666-7199<br />
-                +7 (926)666-7199</p>
+            <div class="footer_section">
+                    <h1 class="footer_h1">Contacts</h1>
+                    <div class="footer_div_img">
+                        <img src="./img/2.png" style="width: 20px; height: 20px;" />
+                        <p class="footer_divone_p">+7 (926)666-7199<br />
+                        +7 (926)666-7199</p>
+                    </div>
             </div>
-            <div class="footer_div_img">
-                <img src="./img/3.png" style="width: 25px; height: 20px;" />
-                <p class="footer_divone_p">contact@xgym.ru<br />
-                www.xgym.com</p>
+            <div class="footer_section">
+                    <h1 class="footer_h1">E-mail</h1>
+                    <div class="footer_div_img">
+                        <img src="./img/3.png" style="width: 25px; height: 20px;" />
+                        <p class="footer_divone_p">contact@xgym.ru<br />
+                        www.xgym.com</p>
+                    </div>
             </div>
-            <div class="footer_div_img">
-                <img src="./img/4.png" style="width: 20px; height: 20px;" />
+            <div class="footer_section">
+                    <h1 class="footer_h1">Social Media</h1>
+                    <div class="footer_div_img">
+                        <img src="./img/4.png" style="width: 20px; height: 20px;" />
+                    </div>
             </div>
         </div>
         <div class="footer_menu">
